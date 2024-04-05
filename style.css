@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --header-height: 3rem;
+    --header-height: 5vh;
     --hue: 174;
     --sat: 63%;
     --first-color: hsl(var(--hue), var(--sat), 40%);
@@ -16,6 +16,28 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 }
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width:0.4vw
+}
+
+body::-webkit-scrollbar-track {
+  background-color:transparent
+}
+body::-webkit-scrollbar-track:hover {
+  background-color:transparent
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#babac0;
+  border-radius:16px;
+  border:5px solid transparent
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color:#a0a0a5;
+}
+
+body::-webkit-scrollbar-button {display:none}
 
 @media screen and (min-width: 968px) {
     :root {
@@ -84,7 +106,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: rgba(199, 199, 199, 0.696);
     z-index: var(--z-fixed);
     transition: .4s;
 }
@@ -126,7 +148,8 @@ img {
 }
 
 .nav__list,
-.nav__link {
+.nav__link { 
+    z-index: 999;
     display: flex;
 }
 
@@ -299,14 +322,23 @@ img {
     border: 1px solid #fff;
     color: #eee;
 }
+button:hover{
+    cursor: pointer;
+}
+.carousel .list .item .buttons button:nth-child(1):hover{
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255));
+}
 
+.carousel .list .item .buttons button:nth-child(2):hover{
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255));
+}
 /* thumbail */
 .thumbnail {
     position: absolute;
     bottom: 50px;
     left: 50%;
     width: max-content;
-    z-index: 100;
+    z-index: 10;
     display: flex;
     gap: 20px;
 }
@@ -538,6 +570,9 @@ img {
 }
 
 @media screen and (max-width: 678px) {
+    .thumbnail{
+        display: none;
+    }
     .carousel .list .item .content {
         padding-right: 0;
     }
@@ -549,7 +584,7 @@ img {
 
 .parallax-2 {
     height: 100vh;
-    background: white;
+    background: url('public/img2.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
