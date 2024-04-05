@@ -570,7 +570,14 @@ button:hover{
 }
 
 @media screen and (max-width: 678px) {
+    .carousel .list .item .content {
+        position: absolute;
+        top: 10%;
+    }
     .thumbnail{
+        display: none;
+    }
+    .arrows{
         display: none;
     }
     .carousel .list .item .content {
