@@ -591,7 +591,7 @@ button:hover {
 /* responsive */
 @media screen and (max-width: 678px) {
     .carousel .list .item .content {
-        padding: 1rem 1rem 1rem 2rem;
+        padding: 0 0 0 1rem;
     }
     .carousel .list .item .buttons {
         grid-template-columns: 1fr;
@@ -601,10 +601,12 @@ button:hover {
         font-size: 30px;
     }
     .thumbnail .item {
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
+        width: 100px;
+        height: 150px;
     }
     .arrows {
-        top: 80%;
+        top: 75%;
         left: 10%;
     }
 }
