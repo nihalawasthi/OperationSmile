@@ -874,6 +874,8 @@ p:nth-of-type(3) {
 
   .inner-column {
     margin-bottom: 3rem;
-    margin-right: 3rem;
   }
+  .overlay-box .year-box{
+    font-size: 12px !important;
+}
 }
