@@ -153,7 +153,7 @@ img {
     box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
     width: 100%;
     height: 5rem;
-    padding: 1.5rem 0 0 0; 
+    padding: 1.5rem 0 0 0;
     display: grid;
     align-content: center;
     border-radius: 0.5rem 0.5rem 0 0;
@@ -590,26 +590,26 @@ button:hover {
 
 /* responsive */
 @media screen and (max-width: 678px) {
-    .carousel .list .item .content {
-        margin-top: -50px;
-        padding: 0 0 0 1rem;
-    }
-    .carousel .list .item .buttons {
-        grid-template-columns: 1fr;
-        width: 50%;
-    }
-    .carousel .list .item .content .title{
-        font-size: 30px;
-    }
-    .thumbnail .item {
-        margin-bottom: 6rem;
-        width: 100px;
-        height: 150px;
-    }
-    .arrows {
-        top: 75%;
-        left: 10%;
-    }
+  .carousel .list .item .content {
+    margin-top: -50px;
+    padding: 0 0 0 1rem;
+  }
+  .carousel .list .item .buttons {
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
+  .carousel .list .item .content .title {
+    font-size: 30px;
+  }
+  .thumbnail .item {
+    margin-bottom: 6rem;
+    width: 100px;
+    height: 150px;
+  }
+  .arrows {
+    top: 75%;
+    left: 10%;
+  }
 }
 
 .parallax-2 {
@@ -849,31 +849,31 @@ p:nth-of-type(3) {
 
 /*responsive*/
 @media screen and (max-width: 678px) {
-    .about-section .content-column .inner-column {
-        padding-right: 0px;
-    }
-    .about-section .content-column .text {
-        font-size: 14px;
-    }
-    .about-section .image-column .inner-column {
-        padding: 40px 0px 0px 0px;
-    }
-    .about-section .image-column .inner-column:after {
-        left: 0px;
-    }
-    .sec-title h2 {
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-    }
-    .email {
-        margin: auto;
-        display: flex;
-        justify-content: left;
-    }
-    
-    .inner-column {
-        margin-bottom: 3rem;
-        margin-right: 3rem;
-    }
+  .about-section .content-column .inner-column {
+    padding-right: 0px;
+  }
+  .about-section .content-column .text {
+    font-size: 14px;
+  }
+  .about-section .image-column .inner-column {
+    padding: 40px 0px 0px 0px;
+  }
+  .about-section .image-column .inner-column:after {
+    left: 0px;
+  }
+  .sec-title h2 {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .email {
+    margin: auto;
+    display: flex;
+    justify-content: left;
+  }
+
+  .inner-column {
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
 }
