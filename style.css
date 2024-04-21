@@ -127,7 +127,7 @@ img {
   }
   .nav__logo {
     color: var(--first-color);
-    background-color: rgb(247, 247, 247,0.8);
+    background-color: rgb(247, 247, 247, 0.8);
     border-radius: 10px;
     padding: 0.2rem 0.5rem;
     margin-left: 1.5rem;
@@ -849,7 +849,7 @@ p:nth-of-type(3) {
 
 .sec-title .title:before {
   position: absolute;
-  content: '';
+  content: "";
   right: 0px;
   bottom: 7px;
   width: 40px;
@@ -892,12 +892,12 @@ p:nth-of-type(3) {
   .inner-column {
     margin-bottom: 3rem;
   }
-  .overlay-box .year-box{
+  .overlay-box .year-box {
     font-size: 12px !important;
-}
+  }
 }
 
-footer{
+footer {
   margin-top: 10vh;
 }
 
@@ -909,29 +909,36 @@ footer{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
-.footer-navigation, .footer-contact, .footer-social {
+.footer-navigation,
+.footer-contact,
+.footer-social {
   margin: 10px;
 }
 
-.footer-navigation h3, .footer-contact h3, .footer-social h3 {
+.footer-navigation h3,
+.footer-contact h3,
+.footer-social h3 {
   color: #f0f0f0;
   margin-bottom: 15px;
 }
 
-.footer-navigation ul, .footer-social .social-icons {
+.footer-navigation ul,
+.footer-social .social-icons {
   list-style: none;
   padding: 0;
 }
 
-.footer-navigation ul li, .social-icon {
+.footer-navigation ul li,
+.social-icon {
   margin-bottom: 10px;
   transition: transform 0.2s ease-in-out;
 }
 
-.footer-navigation ul li a, .social-icon {
+.footer-navigation ul li a,
+.social-icon {
   color: #ffffff;
   text-decoration: none;
 }
@@ -943,7 +950,8 @@ footer{
   margin-right: 5px;
 }
 
-.social-icon:hover, .footer-navigation ul li a:hover {
+.social-icon:hover,
+.footer-navigation ul li a:hover {
   transform: scale(1.1);
 }
 
@@ -959,17 +967,17 @@ footer{
 
 @media (max-width: 600px) {
   #picassoFooter {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-art canvas {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
   #picassoFooter {
-      display: none;
+    display: none;
   }
 }
