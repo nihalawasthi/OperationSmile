@@ -990,7 +990,8 @@ footer {
     align-items: center;
   }
 
-  .footer-contact h3,p {
+  .footer-contact h3,
+  p {
     display: flex;
     justify-content: center;
     align-items: center;
