@@ -1,266 +1,363 @@
 <!DOCTYPE html>
 <html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Operation Smile</title>
+      <meta name="description" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <script src="js/mapdata.js"></script>
+      <script src="js/countrymap.js"></script>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Operation Smile</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="js/mapdata.js"></script>
-    <script src="js/countrymap.js"></script>
-</head>
-
-<body>
-    <header class="header" id="header">
+    <body>
+      <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">OPERATION SMILE</a>
+          <a href="#" class="nav__logo">OPERATION SMILE</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link active-link">
-                            <i class='bx bx-home-alt nav__icon'></i>
-                            <span class="nav__name">Home</span>
-                        </a>
-                    </li>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link active-link">
+                  <i class="bx bx-home-alt nav__icon"></i>
+                  <span class="nav__name">Home</span>
+                </a>
+              </li>
 
-                    <li class="nav__item">
-                        <a href="#About" class="nav__link">
-                            <i class='bx bx-user nav__icon'></i>
-                            <span class="nav__name">About</span>
-                        </a>
-                    </li>
+              <li class="nav__item">
+                <a href="#About" class="nav__link">
+                  <i class="bx bx-user nav__icon"></i>
+                  <span class="nav__name">About</span>
+                </a>
+              </li>
 
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class='bx bx-book-alt nav__icon'></i>
-                            <span class="nav__name">Donate</span>
-                        </a>
-                    </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">
+                  <i class="bx bx-book-alt nav__icon"></i>
+                  <span class="nav__name">Donate</span>
+                </a>
+              </li>
 
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class='bx bx-briefcase-alt nav__icon'></i>
-                            <span class="nav__name">Contact</span>
-                        </a>
-                    </li>
+              <li class="nav__item">
+                <a href="#portfolio" class="nav__link">
+                  <i class="bx bx-briefcase-alt nav__icon"></i>
+                  <span class="nav__name">Contact</span>
+                </a>
+              </li>
 
-                    <li class="nav__item">
-                        <a href="#contactme" class="nav__link">
-                            <i class='bx bx-message-square-detail nav__icon'></i>
-                            <span class="nav__name">Help</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
+              <li class="nav__item">
+                <a href="#contactme" class="nav__link">
+                  <i class="bx bx-message-square-detail nav__icon"></i>
+                  <span class="nav__name">Help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-    </header>
-    <section>
+      </header>
+      <section>
         <section class="parallax-1">
-            <div class="carousel">
-                <div class="list">
-                    <div class="item">
-                        <img src="image/img1.jpg" alt="3 Little Girls">
-                        <div class="content">
-                            <div class="orga">OPERATION</div>
-                            <div class="title">SMILE FOUNDATION</div>
-                            <div class="topic">Children</div>
-                            <div class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
-                                minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
-                                facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
-                                reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
-                                laudantium?
-                            </div>
-                            <div class="buttons">
-                                <button>Donate</button>
-                                <button>SEE MORE</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="image/img2.jpg" alt="Group Photo">
-                        <div class="content">
-                            <div class="orga">OPERATION</div>
-                            <div class="title">SMILE FOUNDATION</div>
-                            <div class="topic">Children</div>
-                            <div class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
-                                minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
-                                facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
-                                reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
-                                laudantium?
-                            </div>
-                            <div class="buttons">
-                                <button>Donate</button>
-                                <button>SEE MORE</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="image/img3.jpg" alt="Group of Children Playing">
-                        <div class="content">
-                            <div class="orga">OPERATION</div>
-                            <div class="title">SMILE FOUNDATION</div>
-                            <div class="topic">Children</div>
-                            <div class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
-                                minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
-                                facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
-                                reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
-                                laudantium?
-                            </div>
-                            <div class="buttons">
-                                <button>Donate</button>
-                                <button>SEE MORE</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="image/img4.jpg" alt="Book Donation">
-                        <div class="content">
-                            <div class="orga">OPERATION</div>
-                            <div class="title">SMILE FOUNDATION</div>
-                            <div class="topic">Children</div>
-                            <div class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
-                                minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
-                                facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
-                                reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
-                                laudantium?
-                            </div>
-                            <div class="buttons">
-                                <button>Donate</button>
-                                <button>SEE MORE</button>
-                            </div>
-                        </div>
-                    </div>
+          <div class="carousel">
+            <div class="list">
+              <div class="item">
+                <img src="image/img1.jpg" alt="3 Little Girls" />
+                <div class="content">
+                  <div class="orga">OPERATION</div>
+                  <div class="title">SMILE FOUNDATION</div>
+                  <div class="topic">Children</div>
+                  <div class="des">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                    sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                    officiis unde, eaque optio ratione aliquid assumenda facere
+                    ab et quasi ducimus aut doloribus non numquam. Explicabo,
+                    laboriosam nisi reprehenderit tempora at laborum natus unde.
+                    Ut, exercitationem eum aperiam illo illum laudantium?
+                  </div>
+                  <div class="buttons">
+                    <button>Donate</button>
+                    <button>SEE MORE</button>
+                  </div>
                 </div>
-                <div class="thumbnail">
-                    <div class="item">
-                        <img src="image/img1.jpg" alt="thumbnail-1">
-                        <div class="content">
-                            <div class="title">
-                                Name Slider
-                            </div>
-                            <div class="description">
-                                Description
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="image/img2.jpg" alt="thumbnail-2">
-                        <div class="content">
-                            <div class="title">
-                                Name Slider
-                            </div>
-                            <div class="description">
-                                Description
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="image/img3.jpg" alt="thumbnail-3">
-                        <div class="content">
-                            <div class="title">
-                                Name Slider
-                            </div>
-                            <div class="description">
-                                Description
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="image/img4.jpg" alt="thumbnail-4">
-                        <div class="content">
-                            <div class="title">
-                                Name Slider
-                            </div>
-                            <div class="description">
-                                Description
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="item">
+                <img src="image/img2.jpg" alt="Group Photo" />
+                <div class="content">
+                  <div class="orga">OPERATION</div>
+                  <div class="title">SMILE FOUNDATION</div>
+                  <div class="topic">Children</div>
+                  <div class="des">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                    sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                    officiis unde, eaque optio ratione aliquid assumenda facere
+                    ab et quasi ducimus aut doloribus non numquam. Explicabo,
+                    laboriosam nisi reprehenderit tempora at laborum natus unde.
+                    Ut, exercitationem eum aperiam illo illum laudantium?
+                  </div>
+                  <div class="buttons">
+                    <button>Donate</button>
+                    <button>SEE MORE</button>
+                  </div>
                 </div>
-
-                <div class="arrows">
-                    <button id="prev">
-                        < </button>
-                            <button id="next"> > </button>
+              </div>
+              <div class="item">
+                <img src="image/img3.jpg" alt="Group of Children Playing" />
+                <div class="content">
+                  <div class="orga">OPERATION</div>
+                  <div class="title">SMILE FOUNDATION</div>
+                  <div class="topic">Children</div>
+                  <div class="des">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                    sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                    officiis unde, eaque optio ratione aliquid assumenda facere
+                    ab et quasi ducimus aut doloribus non numquam. Explicabo,
+                    laboriosam nisi reprehenderit tempora at laborum natus unde.
+                    Ut, exercitationem eum aperiam illo illum laudantium?
+                  </div>
+                  <div class="buttons">
+                    <button>Donate</button>
+                    <button>SEE MORE</button>
+                  </div>
                 </div>
+              </div>
+              <div class="item">
+                <img src="image/img4.jpg" alt="Book Donation" />
+                <div class="content">
+                  <div class="orga">OPERATION</div>
+                  <div class="title">SMILE FOUNDATION</div>
+                  <div class="topic">Children</div>
+                  <div class="des">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                    sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                    officiis unde, eaque optio ratione aliquid assumenda facere
+                    ab et quasi ducimus aut doloribus non numquam. Explicabo,
+                    laboriosam nisi reprehenderit tempora at laborum natus unde.
+                    Ut, exercitationem eum aperiam illo illum laudantium?
+                  </div>
+                  <div class="buttons">
+                    <button>Donate</button>
+                    <button>SEE MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="thumbnail">
+              <div class="item">
+                <img src="image/img1.jpg" alt="thumbnail-1" />
+                <div class="content">
+                  <div class="title">Name Slider</div>
+                  <div class="description">Description</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="image/img2.jpg" alt="thumbnail-2" />
+                <div class="content">
+                  <div class="title">Name Slider</div>
+                  <div class="description">Description</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="image/img3.jpg" alt="thumbnail-3" />
+                <div class="content">
+                  <div class="title">Name Slider</div>
+                  <div class="description">Description</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="image/img4.jpg" alt="thumbnail-4" />
+                <div class="content">
+                  <div class="title">Name Slider</div>
+                  <div class="description">Description</div>
+                </div>
+              </div>
             </div>
 
-            <script src="js/app.js"></script>
+            <div class="arrows">
+              <button id="prev"><</button>
+              <button id="next">></button>
+            </div>
+          </div>
+
+          <script src="js/app.js"></script>
         </section>
 
-        <section id="About" class="parallax-2">
-        </section>
+        <section id="About" class="parallax-2"></section>
 
         <section class="parallax-3 about-section">
-                <div class="container1">
-                    <div class="row clearfix">
-                        <div class="content-column col-md-6 col-sm-12 col-xs-12">
-                            <div class="inner-column">
-                                <div class="sec-title">
-                                    <div class="title">About Us</div>
-                                    <h2>We Are The Leader In <br> The Tagline</h2>
-                                </div>
-                                <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
-                                <div class="email">Request Quote: <span class="theme_color">freequote@gmail.com</span></div>
-                                <a href="about.html" class="theme-btn btn-style-three">Read More</a>
-                            </div>
-                        </div>
-                        <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                            <div class="inner-column" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="image">
-                                    <div id="map" class="img"></div>
-                                      <div class="overlay-box">
-                                        <div class="year-box">Years <br> Community <br> Service<span class="number">3</span></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          
-                      </div>
+          <div class="container1">
+            <div class="row clearfix">
+              <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                <div class="inner-column">
+                  <div class="sec-title">
+                    <div class="title">About Us</div>
+                    <h2>
+                      We Are The Leader In <br />
+                      The Tagline
+                    </h2>
                   </div>
-              </section>
+                  <div class="text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries
+                  </div>
+                  <div class="email">
+                    Request Quote:
+                    <span class="theme_color">freequote@gmail.com</span>
+                  </div>
+                  <a href="about.html" class="theme-btn btn-style-three"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                <div
+                  class="inner-column"
+                  data-wow-delay="0ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="image">
+                    <div id="map" class="img"></div>
+                    <div class="overlay-box">
+                      <div class="year-box">
+                        Years <br />
+                        Community <br />
+                        Service<span class="number">3</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-    </section>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-        const sections = document.querySelectorAll('section[id]')
+        <section class="parallax-4">
+          <footer id="picassoFooter">
+            <div class="footer-navigation">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <p>Email: info@example.com</p>
+              <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="footer-social">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-icon"
+                  >FB</a
+                >
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-icon"
+                  >TW</a
+                >
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="social-icon"
+                  rel="noopener"
+                  >IG</a
+                >
+              </div>
+            </div>
+            <div class="footer-art">
+              <canvas id="picassoCanvas"></canvas>
+            </div>
+          </footer>
+        </section>
+      </section>
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <script>
+        window.onload = function () {
+          var canvas = document.getElementById("picassoCanvas");
+          if (canvas.getContext) {
+            var ctx = canvas.getContext("2d");
+
+            canvas.width = 200;
+            canvas.height = 200;
+            ctx.fillStyle = "#FFD700";
+            ctx.beginPath();
+            ctx.moveTo(100, 0);
+            ctx.lineTo(200, 100);
+            ctx.lineTo(100, 200);
+            ctx.lineTo(0, 100);
+            ctx.closePath();
+            ctx.fill();
+            ctx.fillStyle = "#AFEEEE";
+            ctx.beginPath();
+            ctx.arc(100, 100, 50, 0, Math.PI * 2, true);
+            ctx.fill();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 200);
+            ctx.moveTo(200, 0);
+            ctx.lineTo(0, 200);
+            ctx.strokeStyle = "#FFFFFF";
+            ctx.stroke();
+          }
+        };
+
+        const sections = document.querySelectorAll("section[id]");
 
         function scrollActive() {
-            const scrollY = window.pageYOffset
+          const scrollY = window.pageYOffset;
 
-            sections.forEach(current => {
-                const sectionHeight = current.offsetHeight,
-                    sectionTop = current.offsetTop - 50,
-                    sectionId = current.getAttribute('id')
+          sections.forEach((current) => {
+            const sectionHeight = current.offsetHeight,
+              sectionTop = current.offsetTop - 50,
+              sectionId = current.getAttribute("id");
 
-                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-                } else {
-                    document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-                }
-            })
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+              document
+                .querySelector(".nav__menu a[href*=" + sectionId + "]")
+                .classList.add("active-link");
+            } else {
+              document
+                .querySelector(".nav__menu a[href*=" + sectionId + "]")
+                .classList.remove("active-link");
+            }
+          });
         }
-        window.addEventListener('scroll', scrollActive)
+        window.addEventListener("scroll", scrollActive);
 
         function scrollHeader() {
-            const header = document.getElementById('header')
-            if (this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+          const header = document.getElementById("header");
+          if (this.scrollY >= 80) header.classList.add("scroll-header");
+          else header.classList.remove("scroll-header");
         }
-        window.addEventListener('scroll', scrollHeader)
-
-    </script>
-</body>
-
+        window.addEventListener("scroll", scrollHeader);
+      </script>
+    </body>
+  </html>
 </html>

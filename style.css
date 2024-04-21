@@ -122,7 +122,15 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
+    text-decoration: none;
+  }
+  .nav__logo {
+    color: var(--first-color);
+    background-color: rgb(247, 247, 247,0.8);
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+    margin-left: 1.5rem;
   }
 }
 
@@ -149,7 +157,9 @@ img {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: var(--container-color);
+    background-color: rgba(199, 199, 199, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
     width: 100%;
     height: 5rem;
@@ -158,7 +168,7 @@ img {
     align-content: center;
     border-radius: 0.5rem 0.5rem 0 0;
     transition: 0.4s;
-    z-index: 999;
+    z-index: 99;
   }
 }
 
@@ -839,12 +849,19 @@ p:nth-of-type(3) {
 
 .sec-title .title:before {
   position: absolute;
-  content: "";
+  content: '';
   right: 0px;
   bottom: 7px;
   width: 40px;
   height: 1px;
   background-color: #bbbbbb;
+}
+
+.parallax-3 {
+  background: black no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /*responsive*/
@@ -878,4 +895,81 @@ p:nth-of-type(3) {
   .overlay-box .year-box{
     font-size: 12px !important;
 }
+}
+
+footer{
+  margin-top: 10vh;
+}
+
+#picassoFooter {
+  background-color: #272727;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-navigation, .footer-contact, .footer-social {
+  margin: 10px;
+}
+
+.footer-navigation h3, .footer-contact h3, .footer-social h3 {
+  color: #f0f0f0;
+  margin-bottom: 15px;
+}
+
+.footer-navigation ul, .footer-social .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-navigation ul li, .social-icon {
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-navigation ul li a, .social-icon {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 8px;
+  background-color: #333;
+  margin-right: 5px;
+}
+
+.social-icon:hover, .footer-navigation ul li a:hover {
+  transform: scale(1.1);
+}
+
+.footer-art canvas {
+  max-width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.footer-contact p {
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  #picassoFooter {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-art canvas {
+      max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #picassoFooter {
+      display: none;
+  }
 }
