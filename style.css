@@ -639,6 +639,9 @@ button:hover {
 
 /* responsive */
 @media screen and (max-width: 678px) {
+  .thumbnail {
+    visibility: hidden;
+  }
   .carousel .list .item .content {
     margin-top: -50px;
     padding: 0 0 0 1rem;
