@@ -58,8 +58,8 @@ window.addEventListener("scroll", scrollHeader);
 
 document.getElementById("mode-toggle").addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
-  var sunIcon = document.getElementById("sun-icon");
-  var moonIcon = document.getElementById("moon-icon");
+  const sunIcon = document.getElementById("sun-icon");
+  const moonIcon = document.getElementById("moon-icon");
   if (document.body.classList.contains("dark-mode")) {
     sunIcon.style.display = "none";
     moonIcon.style.display = "";
