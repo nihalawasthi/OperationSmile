@@ -124,6 +124,7 @@ img {
 }
 
 .section {
+  background: transparent;
   padding: 4.5rem 0 2rem;
 }
 
@@ -665,11 +666,27 @@ button:hover {
 }
 
 .parallax-2 {
+  display: flex;
+  align-items: center;
+  position: relative;
   height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.parallax-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: url("public/img2.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  filter: blur(6px) grayscale(100%);
+  z-index: -1;
 }
 
 .parallax-3 {
@@ -899,7 +916,82 @@ p:nth-of-type(3) {
   background-color: #bbbbbb;
 }
 
-.parallax-3 {
+.parallax-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.parallax-4 .heading-row,
+.parallax-4 .sponsors-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("public/bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(6px) grayscale(80%);
+  z-index: -1;
+}
+
+.parallax-4 h1 {
+  display: block;
+  width: 100%;
+  margin-bottom: 10vh;
+  text-decoration: underline;
+}
+
+.sponsors-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.sponsors-section img {
+  border-radius: 50%;
+  width: 15%;
+  margin: auto 2.5%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+.sponsors-section img:hover{
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); 
+  will-change: transform;
+  cursor: pointer;
+  border: #383838 solid;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.9);
+}
+
+.parallax-5 {
+  font-size: 12px;
+  height: 100vh;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax-6 {
   background: var(--parallax-footer-3-bg) no-repeat;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -939,10 +1031,6 @@ p:nth-of-type(3) {
   .overlay-box .year-box {
     font-size: 12px !important;
   }
-}
-
-footer {
-  margin-top: 10vh;
 }
 
 #picassoFooter {
