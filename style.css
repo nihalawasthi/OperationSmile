@@ -26,6 +26,7 @@
   --carousel-arrow-color: #000;
   --parallax-footer-3-bg: rgb(255, 255, 255, 0.7);
   --body-bg: rgb(255, 255, 255, 0.7);
+  --nav-links: #f1683a;
 }
 
 body.dark-mode {
@@ -110,7 +111,7 @@ img {
 
 #sun-icon,
 #moon-icon {
-  font-size: 35px; /* Adjust this value as needed */
+  font-size: 30px;
 }
 
 #mode-toggle {
@@ -217,8 +218,15 @@ img {
   display: flex;
 }
 
+@media screen and (min-width: 800px) {
+  .nav__list {
+    padding-top: 2.5vh;
+  }
+}
+
 .nav__link {
   flex-direction: column;
+  text-decoration: none !important;
   align-items: center;
   row-gap: 4px;
   color: var(--nav-logo-font);
@@ -240,7 +248,7 @@ img {
 
 .active-link {
   position: relative;
-  color: var(--first-color);
+  color: var(--nav-logo-font);
   transition: 0.3s;
 }
 
@@ -287,17 +295,17 @@ img {
   }
 
   .nav__link:hover {
-    color: var(--first-color);
+    color: var(--nav-logo-font);
   }
 
   .active-link::before {
     content: "";
     position: absolute;
-    bottom: -0.75rem;
-    width: 4px;
-    height: 4px;
-    background-color: var(--first-color);
-    border-radius: 50%;
+    bottom: -0.6rem;
+    width: 10px; 
+    height: 2.5px; 
+    background-color: var(--nav-logo-font);
+    border-radius: 1px;
   }
 }
 
@@ -974,8 +982,8 @@ p:nth-of-type(3) {
   object-fit: contain;
   mix-blend-mode: color-burn;
 }
-.sponsors-section img:hover{
-  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); 
+.sponsors-section img:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
   will-change: transform;
   cursor: pointer;
   border: #383838 solid;
