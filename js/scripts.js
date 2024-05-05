@@ -69,12 +69,6 @@ document.getElementById("mode-toggle").addEventListener("click", function () {
   }
 });
 
-<<<<<<< Updated upstream
-window.addEventListener("load", function () {
-  document.querySelector(".honeycomb").style.display = "none";
-});
-=======
 window.addEventListener('load', function() {
   document.querySelector('.background-loader').style.display = 'none';
 });
->>>>>>> Stashed changes
