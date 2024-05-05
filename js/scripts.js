@@ -68,3 +68,7 @@ document.getElementById("mode-toggle").addEventListener("click", function () {
     moonIcon.style.display = "none";
   }
 });
+
+window.addEventListener('load', function() {
+  document.querySelector('.honeycomb').style.display = 'none';
+});
