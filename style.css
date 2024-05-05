@@ -302,8 +302,8 @@ img {
     content: "";
     position: absolute;
     bottom: -0.6rem;
-    width: 10px; 
-    height: 2.5px; 
+    width: 10px;
+    height: 2.5px;
     background-color: var(--nav-logo-font);
     border-radius: 1px;
   }
@@ -1191,8 +1191,9 @@ p:nth-of-type(3) {
   width: 24px;
 }
 
-.honeycomb div:after, .honeycomb div:before {
-  content: '';
+.honeycomb div:after,
+.honeycomb div:before {
+  content: "";
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   position: absolute;
