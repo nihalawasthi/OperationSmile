@@ -1174,88 +1174,79 @@ p:nth-of-type(3) {
   }
 }
 
-.honeycomb {
-  height: 24px;
-  position: relative;
-  width: 24px;
+.progress-loader {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
   z-index: 9999;
 }
 
-.honeycomb div {
-  -webkit-animation: honeycomb 2.1s infinite backwards;
-  animation: honeycomb 2.1s infinite backwards;
-  background: #f3f3f3;
-  height: 12px;
-  margin-top: 6px;
-  position: absolute;
-  width: 24px;
-}
-
+<<<<<<< Updated upstream
 .honeycomb div:after,
 .honeycomb div:before {
   content: "";
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   position: absolute;
+=======
+.background-loader {
+  position: fixed;
+  top: 0;
+>>>>>>> Stashed changes
   left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(36, 36, 36,0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9998; /* This should be lower than the z-index of .progress-loader */
 }
 
-.honeycomb div:after {
-  top: -6px;
-  border-bottom: 6px solid #f3f3f3;
+.progress-loader {
+  width: 150px;
+  background: rgba(236, 236, 238, 0.253);
+  height: 3px;
+  border-radius: 7px;
 }
 
-.honeycomb div:before {
-  bottom: -6px;
-  border-top: 6px solid #f3f3f3;
+.progress {
+  content: '';
+  width: 1px;
+  height: 3px;
+  border-radius: 7px;
+  background: rgb(255, 255, 255);
+  transition: 0.5s;
+  animation: loading1274 2s ease infinite;
 }
 
-.honeycomb div:nth-child(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  left: -28px;
-  top: 0;
-}
+@keyframes loading1274 {
+  0% {
+    width: 0%;
+  }
 
-.honeycomb div:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-  left: -14px;
-  top: 22px;
-}
+  10% {
+    width: 10%;
+  }
 
-.honeycomb div:nth-child(3) {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  left: 14px;
-  top: 22px;
-}
+  50% {
+    width: 40%;
+  }
 
-.honeycomb div:nth-child(4) {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  left: 28px;
-  top: 0;
-}
+  60% {
+    width: 60%;
+  }
 
-.honeycomb div:nth-child(5) {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-  left: 14px;
-  top: -22px;
-}
-
-.honeycomb div:nth-child(6) {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  left: -14px;
-  top: -22px;
-}
-
+<<<<<<< Updated upstream
 .honeycomb div:nth-child(7) {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
   left: 0;
   top: 0;
 }
+=======
+  100% {
+    width: 100%;
+  }
+}
+>>>>>>> Stashed changes
