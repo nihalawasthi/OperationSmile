@@ -1483,3 +1483,9 @@ p:nth-of-type(3) {
 .parallax-2 .card:hover .details {
   bottom: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .parallax-2 .btn{
+    display: none;
+  }
+}
