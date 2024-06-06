@@ -138,7 +138,6 @@ img {
   height: 100vh;
 }
 
-
 .container {
   max-width: 968px;
   margin-left: 1rem;
@@ -316,7 +315,7 @@ img {
 }
 .parallax-0 {
   height: 100vh;
-  background: url('image/logo.png') no-repeat;
+  background: url("image/logo.png") no-repeat;
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
@@ -1061,7 +1060,8 @@ p:nth-of-type(3) {
 .social-icon {
   display: inline-block;
   padding: 8px;
-  background-color: #333;
+  background-color: #dbdbdb;
+  border-radius: 15px;
   margin-right: 5px;
 }
 
@@ -1287,7 +1287,7 @@ p:nth-of-type(3) {
 
 .parallax-2 .slider:after,
 .parallax-2 .slider:before {
-  content: '';
+  content: "";
   height: 90vh;
   position: absolute;
   width: 150px;
@@ -1369,7 +1369,8 @@ p:nth-of-type(3) {
   height: 60px;
   margin: 0 30px;
   border-radius: 20px;
-  background: #fff;
+  background: var(--nav-logo-bg);
+  color: var(--nav-logo-font);
   border: none;
   cursor: pointer;
   z-index: 9999;
@@ -1424,6 +1425,7 @@ p:nth-of-type(3) {
   padding: 1.5em 1.5em 2em;
   background: #000a;
   backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
   transition: 0.3s;
   color: #fff;
   z-index: 2;
@@ -1485,7 +1487,7 @@ p:nth-of-type(3) {
 }
 
 @media screen and (max-width: 767px) {
-  .parallax-2 .btn{
+  .parallax-2 .btn {
     display: none;
   }
 }
