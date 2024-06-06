@@ -83,7 +83,6 @@ body::-webkit-scrollbar-button {
 }
 
 body {
-  display: flex;
   justify-content: center;
   overflow-x: hidden;
   align-items: center;
@@ -123,9 +122,7 @@ img {
 #mode-toggle:focus {
   outline: none;
 }
-
 .section {
-  background: transparent;
   padding: 4.5rem 0 2rem;
 }
 
@@ -137,8 +134,10 @@ img {
 }
 
 .section__height {
+  max-width: 100vw;
   height: 100vh;
 }
+
 
 .container {
   max-width: 968px;
@@ -677,30 +676,6 @@ button:hover {
     top: 75%;
     left: 10%;
   }
-}
-
-.parallax-2 {
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 100vh;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.parallax-2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("public/img2.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  filter: blur(6px) grayscale(100%);
-  z-index: -1;
 }
 
 .parallax-3 {
@@ -1277,4 +1252,234 @@ p:nth-of-type(3) {
   100% {
     rotate: 1080deg;
   }
+}
+.parallax-2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.parallax-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("public/img2.jpg") no-repeat center center / cover;
+  background-attachment: fixed;
+  filter: blur(6px) grayscale(100%);
+  z-index: -1;
+}
+
+.parallax-2 .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-2 .slider:after,
+.parallax-2 .slider:before {
+  content: '';
+  height: 90vh;
+  position: absolute;
+  width: 150px;
+  z-index: 100;
+  pointer-events: none;
+  background: none;
+}
+
+.parallax-2 .slider:after {
+  left: 98px;
+}
+
+.parallax-2 .slider:before {
+  right: 98px;
+}
+
+.parallax-2 .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-x: auto;
+  padding: 100px 50px 0 60px;
+  scroll-behavior: smooth;
+  gap: 25px;
+}
+
+.parallax-2 .card-content::-webkit-scrollbar {
+  height: 0px;
+}
+
+.parallax-2 .card {
+  flex: 0 0 auto;
+  width: 325px;
+  height: 450px;
+  background: #000;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.54);
+  transition: all 0.25s ease;
+}
+
+.parallax-2 .card i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+}
+
+.parallax-2 .card .card-text {
+  padding: 20px;
+}
+
+.parallax-2 .card img.blur {
+  position: absolute;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0.4;
+  transform: translate(-160px, 30px);
+  transition: all 0.35s ease-out;
+}
+
+.parallax-2 .card:hover .card-img {
+  transform: translate(70px, -15px);
+}
+
+.parallax-2 .card:hover .card-img img.blur {
+  transform: translate(-100px, 35px) scale(0.85);
+  opacity: 0.25;
+  filter: blur(20px);
+}
+
+.parallax-2 .btn {
+  min-width: 60px;
+  height: 60px;
+  margin: 0 30px;
+  border-radius: 20px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+.parallax-2 .btn:hover {
+  box-shadow: 0 17px 35px 0 rgba(0, 0, 0, 0.07);
+}
+
+.parallax-2 .btn i {
+  font-size: 1.2rem;
+}
+
+.parallax-2 .card .poster {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.parallax-2 .card .poster::before {
+  content: "";
+  position: absolute;
+  bottom: -45%;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.parallax-2 .card .poster img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.parallax-2 .card:hover .poster::before {
+  bottom: 0;
+}
+
+.parallax-2 .card:hover .poster img {
+  transform: scale(1.1);
+}
+
+.parallax-2 .card .details {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  padding: 1.5em 1.5em 2em;
+  background: #000a;
+  backdrop-filter: blur(16px) saturate(120%);
+  transition: 0.3s;
+  color: #fff;
+  z-index: 2;
+}
+
+.parallax-2 .card .details h1 {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+.parallax-2 .card .details h2 {
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 0.8em;
+  opacity: 0.6;
+}
+
+.parallax-2 .card .details .Upcoming {
+  background-color: rgb(0, 255, 0);
+}
+
+.parallax-2 .card .details .Past {
+  background-color: rgb(255, 0, 0);
+}
+
+.parallax-2 .card .details .datex {
+  display: flex;
+  gap: 0.25em;
+  margin-bottom: 0.8em;
+}
+
+.parallax-2 .card .details .datex i {
+  color: #e3c414;
+}
+
+.parallax-2 .card .details .datex span {
+  margin-left: 0.25em;
+}
+
+.parallax-2 .card .details .desc {
+  color: #fff;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-bottom: 0.8em;
+}
+
+.parallax-2 .card .details button {
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  outline: none;
+}
+
+.parallax-2 .card:hover .details {
+  bottom: 0;
 }
