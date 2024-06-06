@@ -1,9 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  overflow-x: hidden;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.4vw;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 5px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a5;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
 }
 
 .container {
@@ -236,19 +272,21 @@ h2::after {
 }
 
 #back-button {
+  margin: 10px;
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: 2px solid #535151;
+  border-radius: 15px;
   background-color: #fff;
-  color: #000;
+  color: #080808;
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 25px;
+  left: 25px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #back-button:hover {
-  background-color: #000;
+  background-color: #9b9b9b;
   color: #fff;
 }
 
@@ -274,8 +312,16 @@ h2::after {
     flex: 1 0 100%;
   }
 
+  .founder-image img {
+    max-width: 100%;
+  }
+
   .steps {
     margin-top: 20px;
+  }
+
+  .steps h3 {
+    width: 100%;
   }
 
   .step-container {
@@ -305,8 +351,15 @@ h2::after {
 
   .tour-images img {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-bottom: 20px;
+  }
+
+  #back-button {
+    position: absolute;
+    padding: 0;
+    top: 10px;
+    left: 10px;
   }
 }

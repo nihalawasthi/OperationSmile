@@ -1060,7 +1060,8 @@ p:nth-of-type(3) {
 .social-icon {
   display: inline-block;
   padding: 8px;
-  background-color: #333;
+  background-color: #dbdbdb;
+  border-radius: 15px;
   margin-right: 5px;
 }
 
@@ -1368,7 +1369,8 @@ p:nth-of-type(3) {
   height: 60px;
   margin: 0 30px;
   border-radius: 20px;
-  background: #fff;
+  background: var(--nav-logo-bg);
+  color: var(--nav-logo-font);
   border: none;
   cursor: pointer;
   z-index: 9999;
