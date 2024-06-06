@@ -16,25 +16,44 @@ body {
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 40px 40px 20px 40px;
   margin-bottom: 40px;
 }
 
 .founder-info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
 .founder-text {
   flex: 1;
 }
+
+.founder-text p {
+  font-size: 2vh;
+  padding-right: 5vh;
+}
+
 .founder-text ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .founder-text li {
+  font-size: 1.5vh;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #f1d3d2;
+  margin-right: 10px;
 }
+
 .icon {
   margin-right: 10px;
 }
@@ -43,32 +62,57 @@ body {
   flex: 1;
   text-align: center;
 }
+
 .founder-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-.founder-image button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
+  max-width: 40vh;
+  border-radius: 15px;
 }
 
 .steps {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+.steps h3 {
+  font-size: 2vh;
+  font-weight: bold;
+  font-style: italic;
+  width: 45%;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
 .step-container {
   display: flex;
   justify-content: space-between;
 }
+
 .step {
   flex: 1;
   text-align: left;
   padding: 0 15px;
+}
+
+.step h3 {
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  color: #949393;
+}
+
+.step h4 {
+  margin: 0;
+  font-size: 2vh;
+  color: #3b3b3b;
+}
+
+.step p {
+  margin: 0;
+  color: #555;
+  font-size: 1.5vh;
 }
 
 .what-we-offer {
