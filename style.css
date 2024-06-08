@@ -1491,3 +1491,31 @@ p:nth-of-type(3) {
     display: none;
   }
 }
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.388);
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal img{
+  height: 50vh;
+  padding: 0 1ppx;
+}
+.modal .content {
+  text-align: center;
+  position: relative;
+  background: white;
+  border: black 3px solid;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal:target {
+  display: flex;
+}

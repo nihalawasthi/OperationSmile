@@ -183,6 +183,17 @@ h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.curated-tours a{
+  text-decoration: none;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 .tour-info {
   flex: 1;
   padding-right: 40px;
@@ -362,4 +373,31 @@ h2::after {
     top: 10px;
     left: 10px;
   }
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.388);
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal img{
+  height: 50vh;
+  padding: 0 1ppx;
+}
+.content {
+  text-align: center;
+  position: relative;
+  background: white;
+  border: black 3px solid;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal:target {
+  display: flex;
 }
