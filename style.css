@@ -1158,7 +1158,7 @@ p:nth-of-type(3) {
   background: rgb(36, 36, 36, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  z-index: 9998; /* This should be lower than the z-index of .progress-loader */
+  z-index: 999998; /* This should be lower than the z-index of .progress-loader */
 }
 
 .absolute {
