@@ -314,10 +314,143 @@ img {
 }
 .parallax-0 {
   height: 100vh;
-  background: url("image/logo.png") no-repeat;
+  background:no-repeat;
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.parallax-0 #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.parallax-0::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.parallax-0 .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+}
+.parallax-0 .image {
+  text-align: center;
+  flex: 1 1 40rem;
+  z-index: 1;
+}
+.parallax-0 .image img {
+  width: 35vw;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.parallax-0 .image img:hover {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+.parallax-0 .content h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #000000;
+}
+.parallax-0 .content h2 span {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #656565;
+}
+.parallax-0 .content p {
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: 0px;
+}
+.parallax-0 .content p span {
+  font-size: 15px;
+  color: rgb(127, 127, 127);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.parallax-0 .btn{
+  position: absolute;
+  left: 5vw;
+  background-color: #000;
+  color: white;
+}
+.parallax-0 .socials {
+  position: absolute;
+  left: 5vw;
+  margin-top: 10vh;
+}
+.parallax-0 .socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.parallax-0 .socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.parallax-0 .social-icons a {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #ffffff;
+  background-color: #09011b;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.parallax-0 .social-icons a:active,
+.parallax-0 .social-icons a:focus,
+.parallax-0 .social-icons a:hover {
+  color: #fff;
+  background-color: #a5a5a5;
+}
+.parallax-0 .social-icons a.github:hover {
+  background-color: #a5a5a5;
+}
+.parallax-0 .social-icons a.twitter:hover {
+  background-color: #a5a5a5;
+}
+.parallax-0 .social-icons a.linkedin:hover {
+  background-color: #a5a5a5;
+}
+.parallax-0 .social-icons a.dev:hover {
+  background-color: #a5a5a5;
+}
+.parallax-0 .social-icons a.instagram:hover {
+  background-color: #a5a5a5;
+}
+
+@media (max-width: 450px) {
+  .parallax-0 .btn {
+    margin: 4rem 0;
+  }
+  .parallax-0 .socials {
+    margin-top: 12rem;
+  }
+  .parallax-0 .image img {
+    margin-top: -12rem;
+  }
+  .parallax-0 .content p {
+    font-size: 2.2rem;
+  }
+  .parallax-0 .content p span {
+    font-size: 2.2rem;
+  }
 }
 .parallax-1 {
   font-size: 12px;
@@ -1015,13 +1148,13 @@ p:nth-of-type(3) {
   color: var(--nav-logo-font);
   margin-bottom: 15px;
 }
-
+.footer-contact ul,
 .footer-navigation ul,
 .footer-social .social-icons {
   list-style: none;
   padding: 0;
 }
-
+.footer-contact ul li,
 .footer-navigation ul li,
 .social-icon {
   margin-bottom: 10px;
@@ -1309,7 +1442,7 @@ p:nth-of-type(3) {
 
 .parallax-2 .card {
   flex: 0 0 auto;
-  aspect-ratio: 2/3;
+  aspect-ratio: 3/4;
   height: 50vh;
   background: #464545;
   border-radius: 14px;
@@ -1421,7 +1554,7 @@ p:nth-of-type(3) {
 
 .parallax-2 .card .details h1 {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 15px;
   margin-bottom: 0.3em;
 }
 
@@ -1442,7 +1575,7 @@ p:nth-of-type(3) {
 
 .parallax-2 .card .details .datex {
   display: flex;
-  gap: 0.25em;
+  gap: 0.15em;
   margin-bottom: 0.8em;
 }
 
@@ -1462,7 +1595,7 @@ p:nth-of-type(3) {
 }
 
 .parallax-2 .card .details button {
-  padding: 0.5rem 0.75rem;
+  padding: 5px 7.5px;
   color: #fff;
   background: transparent;
   border: 1.5px solid rgba(255, 255, 255, 0.4);

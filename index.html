@@ -1,418 +1,289 @@
 <!DOCTYPE html>
 <html>
-  <html lang="en">
-    <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>Operation Smile</title>
-      <meta name="description" content="" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      />
-      <link rel="shortcut icon" href="image\logo.ico" type="image/x-icon" />
-      <link rel="stylesheet" href="style.css" />
-      <script src="js/mapdata.js"></script>
-      <script src="js/countrymap.js"></script>
-    </head>
+<html lang="en">
 
-    <body>
-      <div class="background-loader">
-        <div class="loader">
-          <svg height="0" width="0" viewBox="0 0 64 64" class="absolute">
-            <defs class="s-xJBuHA073rTt" xmlns="http://www.w3.org/2000/svg">
-              <linearGradient
-                class="s-xJBuHA073rTt"
-                gradientUnits="userSpaceOnUse"
-                y2="2"
-                x2="0"
-                y1="62"
-                x1="0"
-                id="b"
-              >
-                <stop class="s-xJBuHA073rTt" stop-color="#973BED"></stop>
-                <stop
-                  class="s-xJBuHA073rTt"
-                  stop-color="#007CFF"
-                  offset="1"
-                ></stop>
-              </linearGradient>
-              <linearGradient
-                class="s-xJBuHA073rTt"
-                gradientUnits="userSpaceOnUse"
-                y2="0"
-                x2="0"
-                y1="64"
-                x1="0"
-                id="c"
-              >
-                <stop class="s-xJBuHA073rTt" stop-color="#FFC800"></stop>
-                <stop
-                  class="s-xJBuHA073rTt"
-                  stop-color="#F0F"
-                  offset="1"
-                ></stop>
-                <animateTransform
-                  repeatCount="indefinite"
-                  keySplines=".42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1"
-                  keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1"
-                  dur="8s"
-                  values="0 32 32;-270 32 32;-270 32 32;-540 32 32;-540 32 32;-810 32 32;-810 32 32;-1080 32 32;-1080 32 32"
-                  type="rotate"
-                  attributeName="gradientTransform"
-                ></animateTransform>
-              </linearGradient>
-              <linearGradient
-                class="s-xJBuHA073rTt"
-                gradientUnits="userSpaceOnUse"
-                y2="2"
-                x2="0"
-                y1="62"
-                x1="0"
-                id="d"
-              >
-                <stop class="s-xJBuHA073rTt" stop-color="#00E0ED"></stop>
-                <stop
-                  class="s-xJBuHA073rTt"
-                  stop-color="#00DA72"
-                  offset="1"
-                ></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 64 64"
-            height="64"
-            width="64"
-            class="inline-block"
-          >
-            <path
-              stroke-linejoin="round"
-              stroke-linecap="round"
-              stroke-width="8"
-              stroke="url(#b)"
-              d="M 54.722656,3.9726563 A 2.0002,2.0002 0 0 0 54.941406,4 h 5.007813 C 58.955121,17.046124 49.099667,27.677057 36.121094,29.580078 a 2.0002,2.0002 0 0 0 -1.708985,1.978516 V 60 H 29.587891 V 31.558594 A 2.0002,2.0002 0 0 0 27.878906,29.580078 C 14.900333,27.677057 5.0448787,17.046124 4.0507812,4 H 9.28125 c 1.231666,11.63657 10.984383,20.554048 22.6875,20.734375 a 2.0002,2.0002 0 0 0 0.02344,0 c 11.806958,0.04283 21.70649,-9.003371 22.730469,-20.7617187 z"
-              class="dash"
-              id="y"
-              pathLength="360"
-            ></path>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            style="--rotation-duration: 0ms; --rotation-direction: normal"
-            viewBox="0 0 64 64"
-            height="64"
-            width="64"
-            class="inline-block"
-          >
-            <path
-              stroke-linejoin="round"
-              stroke-linecap="round"
-              stroke-width="10"
-              stroke="url(#c)"
-              d="M 32 32
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Operation Smile</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="shortcut icon" href="image\logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/mapdata.js"></script>
+  <script src="js/countrymap.js"></script>
+</head>
+
+<body>
+  <div class="background-loader">
+    <div class="loader">
+      <svg height="0" width="0" viewBox="0 0 64 64" class="absolute">
+        <defs class="s-xJBuHA073rTt" xmlns="http://www.w3.org/2000/svg">
+          <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="b">
+            <stop class="s-xJBuHA073rTt" stop-color="#973BED"></stop>
+            <stop class="s-xJBuHA073rTt" stop-color="#007CFF" offset="1"></stop>
+          </linearGradient>
+          <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="0" x2="0" y1="64" x1="0" id="c">
+            <stop class="s-xJBuHA073rTt" stop-color="#FFC800"></stop>
+            <stop class="s-xJBuHA073rTt" stop-color="#F0F" offset="1"></stop>
+            <animateTransform repeatCount="indefinite"
+              keySplines=".42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1"
+              keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1" dur="8s"
+              values="0 32 32;-270 32 32;-270 32 32;-540 32 32;-540 32 32;-810 32 32;-810 32 32;-1080 32 32;-1080 32 32"
+              type="rotate" attributeName="gradientTransform"></animateTransform>
+          </linearGradient>
+          <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="d">
+            <stop class="s-xJBuHA073rTt" stop-color="#00E0ED"></stop>
+            <stop class="s-xJBuHA073rTt" stop-color="#00DA72" offset="1"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" height="64" width="64"
+        class="inline-block">
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#b)"
+          d="M 54.722656,3.9726563 A 2.0002,2.0002 0 0 0 54.941406,4 h 5.007813 C 58.955121,17.046124 49.099667,27.677057 36.121094,29.580078 a 2.0002,2.0002 0 0 0 -1.708985,1.978516 V 60 H 29.587891 V 31.558594 A 2.0002,2.0002 0 0 0 27.878906,29.580078 C 14.900333,27.677057 5.0448787,17.046124 4.0507812,4 H 9.28125 c 1.231666,11.63657 10.984383,20.554048 22.6875,20.734375 a 2.0002,2.0002 0 0 0 0.02344,0 c 11.806958,0.04283 21.70649,-9.003371 22.730469,-20.7617187 z"
+          class="dash" id="y" pathLength="360"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration: 0ms; --rotation-direction: normal"
+        viewBox="0 0 64 64" height="64" width="64" class="inline-block">
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="10" stroke="url(#c)" d="M 32 32
                 m 0 -27
                 a 27 27 0 1 1 0 54
-                a 27 27 0 1 1 0 -54"
-              class="spin"
-              id="o"
-              pathLength="360"
-            ></path>
-          </svg>
-          <div class="w-2"></div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            style="--rotation-duration: 0ms; --rotation-direction: normal"
-            viewBox="0 0 64 64"
-            height="64"
-            width="64"
-            class="inline-block"
-          >
-            <path
-              stroke-linejoin="round"
-              stroke-linecap="round"
-              stroke-width="8"
-              stroke="url(#d)"
-              d="M 4,4 h 4.6230469 v 25.919922 c -0.00276,11.916203 9.8364941,21.550422 21.7500001,21.296875 11.616666,-0.240651 21.014356,-9.63894 21.253906,-21.25586 a 2.0002,2.0002 0 0 0 0,-0.04102 V 4 H 56.25 v 25.919922 c 0,14.33873 -11.581192,25.919922 -25.919922,25.919922 a 2.0002,2.0002 0 0 0 -0.0293,0 C 15.812309,56.052941 3.998433,44.409961 4,29.919922 Z"
-              class="dash"
-              id="u"
-              pathLength="360"
-            ></path>
-          </svg>
+                a 27 27 0 1 1 0 -54" class="spin" id="o" pathLength="360"></path>
+      </svg>
+      <div class="w-2"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration: 0ms; --rotation-direction: normal"
+        viewBox="0 0 64 64" height="64" width="64" class="inline-block">
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#d)"
+          d="M 4,4 h 4.6230469 v 25.919922 c -0.00276,11.916203 9.8364941,21.550422 21.7500001,21.296875 11.616666,-0.240651 21.014356,-9.63894 21.253906,-21.25586 a 2.0002,2.0002 0 0 0 0,-0.04102 V 4 H 56.25 v 25.919922 c 0,14.33873 -11.581192,25.919922 -25.919922,25.919922 a 2.0002,2.0002 0 0 0 -0.0293,0 C 15.812309,56.052941 3.998433,44.409961 4,29.919922 Z"
+          class="dash" id="u" pathLength="360"></path>
+      </svg>
+    </div>
+  </div>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">OPERATION SMILE</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link active-link">
+              <i class="bx bx-home-alt nav__icon"></i>
+              <span class="nav__name">Home</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="bx bx-user nav__icon"></i>
+              <span class="nav__name">About</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#donate" class="nav__link">
+              <i class="bx bx-book-alt nav__icon"></i>
+              <span class="nav__name">Donate</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#Event" class="nav__link">
+              <i class="bx bx-calendar-event nav__icon"></i>
+              <span class="nav__name">Events</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="bx bx-briefcase-alt nav__icon"></i>
+              <span class="nav__name">Contact</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <button id="mode-toggle" class="nav__link" title="Toggle Mode">
+              <i class="bx bx-sun" id="sun-icon"></i>
+              <i class="bx bx-moon" id="moon-icon" style="display: none"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="parallax-0">
+    <div class="content">
+      <h2>Operation Smi<span>le Foundation</span></h2>
+      <p>"Be the reason of Someone's Smile"</p>
+      <a href="#about" class="btn"><span>About us</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/"
+              target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+          <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/" target="_blank"><i
+                class="fab fa-twitter"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/operation.smile__"><i
+                class="fab fa-instagram" target="_blank"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="image">
+      <img draggable="false" class="tilt" src="image\logo-l.jpg" alt="">
+    </div>
+  </section>
+  <section id="about" class="parallax-3 about-section">
+    <div class="container1">
+      <div class="row clearfix">
+        <div class="content-column col-md-6 col-sm-12 col-xs-12">
+          <div class="inner-column">
+            <div class="sec-title">
+              <div class="title">About Us</div>
+              <h2>
+                Operation Smile <br />
+                Foundation
+              </h2>
+            </div>
+            <div class="text">
+              At Operation Smile Foundation, our team is united by a common
+              passion to bring happiness and improve lives. We believe that
+              compassion, innovation, and resilience are powerful forces for
+              creating long-term change in the world. From our dedicated
+              leadership to our skilled medical professionals, enthusiastic
+              volunteers, and committed support staff, we work together to
+              break the cycle of poverty and foster communities where every
+              smile represents new opportunities and dignity.
+            </div>
+            <div class="email">
+              Request Quote:
+              <span class="theme_color">operationsmile2303@gmail.com</span>
+            </div>
+            <a href="about" class="theme-btn btn-style-three">Read More</a>
+          </div>
+        </div>
+        <div class="image-column col-md-6 col-sm-12 col-xs-12">
+          <div class="inner-column" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="image">
+              <div id="map" class="img"></div>
+              <div class="overlay-box">
+                <div class="year-box">
+                  Years <br />
+                  Community <br />
+                  Service<span class="number">3</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <header class="header" id="header">
-        <nav class="nav container">
-          <a href="#" class="nav__logo">OPERATION SMILE</a>
-
-          <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link active-link">
-                  <i class="bx bx-home-alt nav__icon"></i>
-                  <span class="nav__name">Home</span>
-                </a>
-              </li>
-
-              <li class="nav__item">
-                <a href="#about" class="nav__link">
-                  <i class="bx bx-user nav__icon"></i>
-                  <span class="nav__name">About</span>
-                </a>
-              </li>
-
-              <li class="nav__item">
-                <a href="#donate" class="nav__link">
-                  <i class="bx bx-book-alt nav__icon"></i>
-                  <span class="nav__name">Donate</span>
-                </a>
-              </li>
-
-              <li class="nav__item">
-                <a href="#Event" class="nav__link">
-                  <i class="bx bx-calendar-event nav__icon"></i>
-                  <span class="nav__name">Events</span>
-                </a>
-              </li>
-
-              <li class="nav__item">
-                <a href="#contact" class="nav__link">
-                  <i class="bx bx-briefcase-alt nav__icon"></i>
-                  <span class="nav__name">Contact</span>
-                </a>
-              </li>
-
-              <li class="nav__item">
-                <button id="mode-toggle" class="nav__link" title="Toggle Mode">
-                  <i class="bx bx-sun" id="sun-icon"></i>
-                  <i
-                    class="bx bx-moon"
-                    id="moon-icon"
-                    style="display: none"
-                  ></i>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <section class="parallax-0"></section>
-      <section id="about" class="parallax-3 about-section">
-        <div class="container1">
-          <div class="row clearfix">
-            <div class="content-column col-md-6 col-sm-12 col-xs-12">
-              <div class="inner-column">
-                <div class="sec-title">
-                  <div class="title">About Us</div>
-                  <h2>
-                    Operation Smile <br />
-                    Foundation
-                  </h2>
-                </div>
-                <div class="text">
-                  At Operation Smile Foundation, our team is united by a common
-                  passion to bring happiness and improve lives. We believe that
-                  compassion, innovation, and resilience are powerful forces for
-                  creating long-term change in the world. From our dedicated
-                  leadership to our skilled medical professionals, enthusiastic
-                  volunteers, and committed support staff, we work together to
-                  break the cycle of poverty and foster communities where every
-                  smile represents new opportunities and dignity.
-                </div>
-                <div class="email">
-                  Request Quote:
-                  <span class="theme_color">operationsmile2303@gmail.com</span>
-                </div>
-                <a href="about" class="theme-btn btn-style-three">Read More</a>
-              </div>
-            </div>
-            <div class="image-column col-md-6 col-sm-12 col-xs-12">
-              <div
-                class="inner-column"
-                data-wow-delay="0ms"
-                data-wow-duration="1500ms"
-              >
-                <div class="image">
-                  <div id="map" class="img"></div>
-                  <div class="overlay-box">
-                    <div class="year-box">
-                      Years <br />
-                      Community <br />
-                      Service<span class="number">3</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="sponsors" class="parallax-4">
-        <div class="heading-row">
-          <h1>Our Partners</h1>
-        </div>
-        <div class="sponsors-row">
-          <div class="sponsors-section">
-            <img src="image/Saadhak.png" alt="Saadhak" />
-            <img src="image/seva.png" alt="Seva" />
-            <img src="image/visan.png" alt="Visan" />
-          </div>
-        </div>
-      </section>
-      <section class="parallax-1">
-        <div class="carousel">
-          <div class="list">
-            <div class="item">
-              <img src="image/img1.jpg" alt="3 Little Girls" />
-              <div class="content">
-                <div class="orga">OPERATION</div>
-                <div class="title">SMILE FOUNDATION</div>
-                <div class="topic">Children</div>
-                <div class="des">
-                  The Operation Smile Foundation is devoted to enhancing lives
-                  through acts of compassion, groundbreaking ideas, and
-                  unwavering strength in the face of adversity. Their
-                  wide-ranging initiatives encompass organizing sports
-                  activities to promote physical fitness, providing assistance
-                  and care for stray animals, gathering and distributing
-                  clothing donations to those in need, and offering educational
-                  programs aimed at providing vital support and empowerment.Your
-                  contribution helps make a difference in the lives of those in
-                  need.
-                </div>
-                <div class="buttons">
-                  <button><a href="#donate">Donate</a></button>
-                  <button>SEE MORE</button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <img src="image/img2.jpg" alt="Group Photo" />
-              <div class="content">
-                <div class="orga">OPERATION</div>
-                <div class="title">SMILE FOUNDATION</div>
-                <div class="topic">Children</div>
-                <div class="des">
-                  LThe Operation Smile Foundation is devoted to enhancing lives
-                  through acts of compassion, groundbreaking ideas, and
-                  unwavering strength in the face of adversity. Their
-                  wide-ranging initiatives encompass organizing sports
-                  activities to promote physical fitness, providing assistance
-                  and care for stray animals, gathering and distributing
-                  clothing donations to those in need, and offering educational
-                  programs aimed at providing vital support and empowerment.Your
-                  contribution helps make a difference in the lives of those in
-                  need.
-                </div>
-                <div class="buttons">
-                  <button><a href="#donate">Donate</a></button>
-                  <button>SEE MORE</button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <img src="image/img3.jpg" alt="Group of Children Playing" />
-              <div class="content">
-                <div class="orga">OPERATION</div>
-                <div class="title">SMILE FOUNDATION</div>
-                <div class="topic">Children</div>
-                <div class="des">
-                  The Operation Smile Foundation is devoted to enhancing lives
-                  through acts of compassion, groundbreaking ideas, and
-                  unwavering strength in the face of adversity. Their
-                  wide-ranging initiatives encompass organizing sports
-                  activities to promote physical fitness, providing assistance
-                  and care for stray animals, gathering and distributing
-                  clothing donations to those in need, and offering educational
-                  programs aimed at providing vital support and empowerment.Your
-                  contribution helps make a difference in the lives of those in
-                  need.
-                </div>
-                <div class="buttons">
-                  <button><a href="#donate">Donate</a></button>
-                  <button>SEE MORE</button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <img src="image/img4.jpg" alt="Book Donation" />
-              <div class="content">
-                <div class="orga">OPERATION</div>
-                <div class="title">SMILE FOUNDATION</div>
-                <div class="topic">Children</div>
-                <div class="des">
-                  The Operation Smile Foundation is devoted to enhancing lives
-                  through acts of compassion, groundbreaking ideas, and
-                  unwavering strength in the face of adversity. Their
-                  wide-ranging initiatives encompass organizing sports
-                  activities to promote physical fitness, providing assistance
-                  and care for stray animals, gathering and distributing
-                  clothing donations to those in need, and offering educational
-                  programs aimed at providing vital support and empowerment.Your
-                  contribution helps make a difference in the lives of those in
-                  need.
-                </div>
-                <div class="buttons">
-                  <button><a href="#donate">Donate</a></button>
-                  <button>SEE MORE</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="thumbnail">
-            <div class="item">
-              <img src="image/img1.jpg" alt="thumbnail-1" loading="lazy" />
-            </div>
-            <div class="item">
-              <img src="image/img2.jpg" alt="thumbnail-2" loading="lazy" />
-            </div>
-            <div class="item">
-              <img src="image/img3.jpg" alt="thumbnail-3" loading="lazy" />
-            </div>
-            <div class="item">
-              <img src="image/img4.jpg" alt="thumbnail-4" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="arrows">
-            <button id="prev"><</button>
-            <button id="next">></button>
-          </div>
-        </div>
-        <script src="js/app.js"></script>
-        <div id="donate" class="modal">
+    </div>
+  </section>
+  <section id="sponsors" class="parallax-4">
+    <div class="heading-row">
+      <h1>Our Partners</h1>
+    </div>
+    <div class="sponsors-row">
+      <div class="sponsors-section">
+        <img src="image/Saadhak.png" alt="Saadhak" />
+        <img src="image/seva.png" alt="Seva" />
+        <img src="image/visan.png" alt="Visan" />
+      </div>
+    </div>
+  </section>
+  <section class="parallax-1">
+    <div class="carousel">
+      <div class="list">
+        <div class="item">
+          <img src="image/img1.jpg" alt="3 Little Girls" />
           <div class="content">
-            <h1>Operation Smile</h1>
-            <img src="image/QR.jpg" alt="" />
-            <p>
-              VPA: merchant1524783.augp@aubank <br />
-              Account No. 2402254959634033 <br />
-              IFSC Code - AUBL0002549
-            </p>
-            <a
-              href="#"
-              style="
+            <div class="topic">Gallery</div>
+            <div class="orga">OPERATION</div>
+            <div class="title">SMILE FOUNDATION</div>
+            <div class="buttons">
+              <button><a href="#donate">Donate</a></button>
+              <button>SEE MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/img2.jpg" alt="Group Photo" />
+          <div class="content">
+            <div class="topic">Gallery</div>
+            <div class="orga">OPERATION</div>
+            <div class="title">SMILE FOUNDATION</div>
+            <div class="buttons">
+              <button><a href="#donate">Donate</a></button>
+              <button>SEE MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/img3.jpg" alt="Group of Children Playing" />
+          <div class="content">
+            <div class="topic">Gallery</div>
+            <div class="orga">OPERATION</div>
+            <div class="title">SMILE FOUNDATION</div>
+            <div class="buttons">
+              <button><a href="#donate">Donate</a></button>
+              <button>SEE MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/img4.jpg" alt="Book Donation" />
+          <div class="content">
+            <div class="topic">Gallery</div>
+            <div class="orga">OPERATION</div>
+            <div class="title">SMILE FOUNDATION</div>
+            <div class="buttons">
+              <button><a href="#donate">Donate</a></button>
+              <button>SEE MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thumbnail">
+        <div class="item">
+          <img src="image/img1.jpg" alt="thumbnail-1" loading="lazy" />
+        </div>
+        <div class="item">
+          <img src="image/img2.jpg" alt="thumbnail-2" loading="lazy" />
+        </div>
+        <div class="item">
+          <img src="image/img3.jpg" alt="thumbnail-3" loading="lazy" />
+        </div>
+        <div class="item">
+          <img src="image/img4.jpg" alt="thumbnail-4" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="arrows">
+        <button id="prev">
+          < </button>
+            <button id="next">></button>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+    <div id="donate" class="modal">
+      <div class="content">
+        <h1>Operation Smile</h1>
+        <img src="image/QR.jpg" alt="" />
+        <p>
+          VPA: merchant1524783.augp@aubank <br />
+          Account No. 2402254959634033 <br />
+          IFSC Code - AUBL0002549
+        </p>
+        <a href="#" style="
                 position: absolute;
                 top: 10px;
                 right: 10px;
@@ -420,204 +291,150 @@
                 color: #fe0606;
                 font-size: 30px;
                 text-decoration: none;
-              "
-              >&times;</a
-            >
+              ">&times;</a>
+      </div>
+    </div>
+  </section>
+  <section id="Event" class="parallax-2">
+    <div class="heading-row" style="text-align: center;">
+      <h1>Events:</h1>
+    </div>
+    <div class="slider">
+      <button id="prev1" class="btn">
+        <i class="las la-angle-left"></i>
+      </button>
+      <div class="card-content">
+        <div class="card">
+          <div class="poster">
+            <img src="image/psmile.jpg" alt="Humanities" loading="lazy" />
+          </div>
+          <div class="details">
+            <h2 class="Past">Past</h2>
+            <h1>Awareness about Humanities in school Students</h1>
+            <div class="datex">
+              <span>May 2024</span>
+            </div>
+            <button>See More</button>
           </div>
         </div>
-      </section>
-      <section id="Event" class="parallax-2">
-        <div class="heading-row" style="text-align: center;">
-          <h1>Events:</h1>
-        </div>
-        <div class="slider">
-          <button id="prev1" class="btn">
-            <i class="las la-angle-left"></i>
-          </button>
-          <div class="card-content">
-            <div class="card">
-              <div class="poster">
-                <img src="image/psmile.jpg" alt="Humanities" loading="lazy" />
-              </div>
-              <div class="details">
-                <h2 class="Past">Past</h2>
-                <h1>Awareness about Humanities in school Students</h1>
-                <div class="datex">
-                  <span>May 2024</span>
-                </div>
-                <button>See More</button>
-              </div>
+        <div class="card">
+          <div class="poster">
+            <img src="image/smile.jpg" alt="Yoga" loading="lazy" />
+          </div>
+          <div class="details">
+            <h2 class="Past">Past</h2>
+            <h1>Importance of Yoga in our day to day life</h1>
+            <div class="datex">
+              <span>May 2024</span>
             </div>
-            <div class="card">
-              <div class="poster">
-                <img src="image/smile.jpg" alt="Yoga" loading="lazy" />
-              </div>
-              <div class="details">
-                <h2 class="Past">Past</h2>
-                <h1>Importance of Yoga in our day to day life</h1>
-                <div class="datex">
-                  <span>May 2024</span>
-                </div>
-                <button>See More</button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="poster">
-                <img src="image/wsmile.jpg" alt="Cold Water" loading="lazy" />
-              </div>
-              <div class="details">
-                <h2 class="Past">Past</h2>
-                <h1>One week cold water distribution</h1>
-                <div class="datex">
-                  <span>May 2024</span>
-                </div>
-                <button>See More</button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="poster">
-                <img src="image/givesmile.jpg" alt="Food" loading="lazy" />
-              </div>
-              <div class="details">
-                <h2 class="Past">Past</h2>
-                <h1>Collab with Roti Bank foundation</h1>
-                <div class="datex">
-                  <span>May 2024</span>
-                </div>
-                <button>See More</button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="poster">
-                <img src="image/msmile.jpg" alt="Food" loading="lazy" />
-              </div>
-              <div class="details">
-                <h2 class="Past">Past</h2>
-                <h1>Collab with Roti bank foundation</h1>
-                <div class="datex">
-                  <span>May 2024</span>
-                </div>
-                <button>See More</button>
-              </div>
-            </div>
+            <button>See More</button>
           </div>
         </div>
-        <button id="next1" class="btn">
-          <i class="las la-angle-right"></i>
-        </button>
-        <script src="js/slider.js"></script>
-      </section>
-      <section id="contact" class="parallax-6">
-        <footer id="picassoFooter">
-          <div class="footer-navigation">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#donate">Donate</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="card">
+          <div class="poster">
+            <img src="image/wsmile.jpg" alt="Cold Water" loading="lazy" />
           </div>
-          <div class="footer-contact">
-            <h3>Contact Us</h3>
-            <p>Email: operationsmile2303@gmail.com</p>
-            <p>Phone: +91 8595588085</p>
-          </div>
-          <div class="footer-social">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-              <a
-                href="https://facebook.com/operation.smile__
-                "
-                target="_blank"
-                rel="noopener"
-                class="social-icon"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  color="#000000"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                  /></svg
-              ></a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener"
-                class="social-icon"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  color="#000000"
-                  fill="none"
-                >
-                  <path
-                    d="M2 18.5C3.76504 19.521 5.81428 20 8 20C14.4808 20 19.7617 14.8625 19.9922 8.43797L22 4.5L18.6458 5C17.9407 4.37764 17.0144 4 16 4C13.4276 4 11.5007 6.51734 12.1209 8.98003C8.56784 9.20927 5.34867 7.0213 3.48693 4.10523C2.25147 8.30185 3.39629 13.3561 6.5 16.4705C6.5 17.647 3.5 18.3488 2 18.5Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                  /></svg
-              ></a>
-              <a
-                href="https://instagram.com/operation.smile__
-                "
-                target="_blank"
-                class="social-icon"
-                rel="noopener"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  color="#000000"
-                  fill="none"
-                >
-                  <path
-                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    d="M17.5078 6.5L17.4988 6.5"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  /></svg
-              ></a>
+          <div class="details">
+            <h2 class="Past">Past</h2>
+            <h1>One week cold water distribution</h1>
+            <div class="datex">
+              <span>May 2024</span>
             </div>
+            <button>See More</button>
           </div>
-          <div class="footer-art">
-            <img src="image/logo.png" alt="osflogo" id="picassoCanvas" />
+        </div>
+        <div class="card">
+          <div class="poster">
+            <img src="image/givesmile.jpg" alt="Food" loading="lazy" />
           </div>
-        </footer>
-      </section>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
-      <script src="js/scripts.js"></script>
-    </body>
-  </html>
+          <div class="details">
+            <h2 class="Past">Past</h2>
+            <h1>Collab with Roti Bank foundation</h1>
+            <div class="datex">
+              <span>May 2024</span>
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="poster">
+            <img src="image/msmile.jpg" alt="Food" loading="lazy" />
+          </div>
+          <div class="details">
+            <h2 class="Past">Past</h2>
+            <h1>Collab with Roti bank foundation</h1>
+            <div class="datex">
+              <span>May 2024</span>
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="next1" class="btn">
+      <i class="las la-angle-right"></i>
+    </button>
+    <script src="js/slider.js"></script>
+  </section>
+  <section id="contact" class="parallax-6">
+    <footer id="picassoFooter">
+      <div class="footer-navigation">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Email: operationsmile2303@gmail.com</li>
+          <li>Address : A1, DDA Colony, New Jaffrabad, <br> Shahdara, New Delhi, Delhi, 110032</li>
+          <li>Phone: +91 8595588085</li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://instagram.com/operation.smile__
+                " target="_blank" class="social-icon" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
+              <path
+                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <path
+                d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                stroke="currentColor" stroke-width="1.5" />
+              <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></a>
+          <a href="https://facebook.com/operation.smile__
+                " target="_blank" rel="noopener" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
+              <path
+                d="M2 18.5C3.76504 19.521 5.81428 20 8 20C14.4808 20 19.7617 14.8625 19.9922 8.43797L22 4.5L18.6458 5C17.9407 4.37764 17.0144 4 16 4C13.4276 4 11.5007 6.51734 12.1209 8.98003C8.56784 9.20927 5.34867 7.0213 3.48693 4.10523C2.25147 8.30185 3.39629 13.3561 6.5 16.4705C6.5 17.647 3.5 18.3488 2 18.5Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="footer-art">
+        <img src="image/logo.png" alt="osflogo" id="picassoCanvas" />
+      </div>
+    </footer>
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
+
 </html>
