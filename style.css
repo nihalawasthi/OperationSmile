@@ -911,7 +911,9 @@ p:nth-of-type(3) {
   display: block;
   width: 100%;
   margin-bottom: 10vh;
-  text-decoration: underline;
+  font-size: 6vh;
+  color: var(--body-bg);
+  font-weight: 600;
 }
 
 .sponsors-section {
