@@ -1640,3 +1640,7 @@ p:nth-of-type(3) {
 .modal:target {
   display: flex;
 }
+#Images .content {
+  width: 90vw;
+  height: 90vh;
+}
