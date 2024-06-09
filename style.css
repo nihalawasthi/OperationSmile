@@ -726,7 +726,7 @@ p:nth-of-type(3) {
 .about-section .content-column .text {
   position: relative;
   color: #777777;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 2em;
   margin-bottom: 40px;
 }
@@ -891,7 +891,6 @@ p:nth-of-type(3) {
   justify-content: center;
   align-items: center;
 }
-
 .parallax-4::before {
   content: "";
   position: absolute;
@@ -1271,6 +1270,7 @@ p:nth-of-type(3) {
   height: 90vh;
   overflow: hidden;
   position: relative;
+  bottom: 0;
 }
 
 .parallax-2 .slider:after,
@@ -1309,8 +1309,8 @@ p:nth-of-type(3) {
 
 .parallax-2 .card {
   flex: 0 0 auto;
-  width: 450px;
-  height: 500px;
+  aspect-ratio: 2/3;
+  height: 50vh;
   background: #464545;
   border-radius: 14px;
   position: relative;
