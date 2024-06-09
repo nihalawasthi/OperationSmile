@@ -351,11 +351,11 @@ img {
 .parallax-0 .image img {
   width: 35vw;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
 .parallax-0 .image img:hover {
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 .parallax-0 .content h2 {
   font-size: 4rem;
