@@ -323,13 +323,6 @@ img {
   gap: 1.5rem;
   align-items: center;
 }
-.parallax-0 #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
 .parallax-0::before {
   content: "";
   position: absolute;
@@ -361,6 +354,7 @@ img {
   font-size: 4rem;
   font-weight: 800;
   color: #000000;
+  margin: 10vh 3vw;
 }
 .parallax-0 .content h2 span {
   font-size: 4rem;
