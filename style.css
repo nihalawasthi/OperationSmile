@@ -314,7 +314,7 @@ img {
 }
 .parallax-0 {
   height: 100vh;
-  background:no-repeat;
+  background: no-repeat;
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
@@ -372,9 +372,9 @@ img {
   font-weight: 600;
   padding: 1rem 0;
 }
-.parallax-0 .btn{
+.parallax-0 .btn {
   position: absolute;
-  left: 5vw;
+  left: 20vw;
   background-color: #000;
   color: white;
 }
@@ -431,7 +431,10 @@ img {
 
 @media (max-width: 450px) {
   .parallax-0 .btn {
-    margin: 4rem 0;
+    display: none;
+  }
+  .parallax-0 .image {
+    display: none;
   }
   .parallax-0 .socials {
     margin-top: 12rem;
@@ -1066,6 +1069,13 @@ p:nth-of-type(3) {
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.9);
 }
 
+@media screen and (max-width: 768px) {
+  .sponsors-section img {
+    width: 40%;
+    margin: auto 5%;
+  }
+}
+
 .parallax-5 {
   font-size: 12px;
   height: 100vh;
@@ -1605,36 +1615,4 @@ p:nth-of-type(3) {
   .parallax-2 .btn {
     display: none;
   }
-}
-
-.modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.388);
-  z-index: 99999;
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
-.modal img {
-  height: 50vh;
-  padding: 0 1ppx;
-}
-.modal .content {
-  text-align: center;
-  position: relative;
-  background: white;
-  border: black 3px solid;
-  padding: 12px 24px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.modal:target {
-  display: flex;
-}
-#Images .content {
-  width: 90vw;
-  height: 90vh;
 }
