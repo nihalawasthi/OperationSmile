@@ -620,7 +620,7 @@ body {
 .swiper {
   width: 100%;
   height: 100%;
-  --swiper-theme-color: #fff;
+  --swiper-theme-color: #000000;
 }
 
 .demo-slide-title {
@@ -632,4 +632,13 @@ body {
   bottom: 10%;
   z-index: 100;
   transform: translate(0);
+}
+
+.video-player {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #1d1d1d;
 }
